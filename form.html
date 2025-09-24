@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Anggota Klub Sci-Fi</title>
+  <link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+  <div class="form-wrapper">
+  <nav>
+    <a href="index.html" style=" text-decoration: none; color: white; border-radius: 8px; background: #4f46e5; padding: 2px 5px;">Kembali ke Daftar Tugas</a>
+  </nav>
+    <div class="form-header">
+      <h1>🚀 Pendaftaran Anggota Klub Sci-Fi</h1>
+      <p>Isi formulir di bawah ini untuk bergabung dengan komunitas luar angkasa fiksi ilmiah ✨</p>
+    </div>
+
+    <form action="proses.php" method="post" class="form-grid">
+      <div class="form-group">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" maxlength="30" placeholder="Masukkan nama lengkap" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" required>
+      </div>
+
+      <div class="form-group">
+        <label for="tgl_lahir">Tanggal Lahir</label>
+        <input type="date" id="tgl_lahir" name="tgl_lahir" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="alamat">Alamat Asal</label>
+        <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat asalmu" required>
+      </div>
+
+      <div class="form-group">
+        <label for="warna">Warna Favorit</label>
+        <input type="color" id="warna" name="warna" value="#4c1d95" required>
+        <div class="color-preview" id="preview"></div>
+      </div>
+
+      <div class="form-group">
+        <label>Jenis Kelamin</label>
+        <div class="options">
+          <label><input type="radio" name="gender" value="pria" required> Pria</label>
+          <label><input type="radio" name="gender" value="wanita" required> Wanita</label>
+        </div>
+      </div>
+
+      <div class="form-group full">
+        <label for="hobi">Hobi</label>
+        <input type="text" id="hobi" name="hobi" placeholder="Tulis hobimu di sini..." required>
+      </div>
+
+      <div class="form-group full">
+        <label for="foto">Upload Foto Dirimu(jpg/png)</label>
+        <input type="file" id="foto" name="foto" accept=".jpg,.png" required>
+      </div>
+
+      <div class="form-group full">
+        <label>Minat dalam Klub</label>
+        <div class="options">
+          <label><input type="checkbox" name="minat[]" value="astronomi" required> 🔭 Astronomi</label>
+          <label><input type="checkbox" name="minat[]" value="alien" required> 👽 Alien & UFO</label>
+          <label><input type="checkbox" name="minat[]" value="teknologi" required> 🛸 Teknologi luar angkasa</label>
+          <label><input type="checkbox" name="minat[]" value="fiksi" required> 📚 Fiksi ilmiah (film, buku, anime)</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="planet">Planet Favorit</label>
+        <select id="planet" name="planet" required>
+          <option value="">-- Pilih Planet --</option>
+          <option value="saturnus">Merkurius</option>
+          <option value="saturnus">Venus</option>
+          <option value="mars">Bumi</option>
+          <option value="venus">Mars</option>
+          <option value="jupiter">Jupiter</option>
+          <option value="saturnus">Saturnus</option>
+          <option value="saturnus">Uranus</option>
+          <option value="saturnus">Neptunus</option>
+        </select>
+      </div>
+
+      <div class="form-group full">
+        <label for="pesan">Pesan atau Cerita Singkat</label>
+        <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesanmu di sini..." required></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-submit">🚀 Daftar</button>
+        <button type="reset" class="btn-reset">🔄 Reset</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

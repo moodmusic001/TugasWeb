@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabel Senjata Fantasy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9fb;
+      padding: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background: #4c1d95;
+      color: white;
+    }
+
+    caption {
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #1e293b;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" style=" text-decoration: none; color: white; border-radius: 8px; background: #4f46e5; padding: 2px 5px;">Kembali ke Daftar Tugas</a>
+      </nav>
+
+  <h1>Tabel Senjata Fantasy</h1>
+
+  <table>
+    <caption>1. Struktur Tabel</caption>
+    <tr>
+      <th>Nama Senjata</th>
+      <th>Jenis</th>
+      <th>Kekuatan</th>
+    </tr>
+    <tr>
+      <td>Excalibur</td>
+      <td>Pedang</td>
+      <td>Cahaya Ilahi</td>
+    </tr>
+    <tr>
+      <td>Mjolnir</td>
+      <td>Palu</td>
+      <td>Petir</td>
+    </tr>
+    <tr>
+      <td>Gungnir</td>
+      <td>Tombak</td>
+      <td>Tidak Pernah Meleset</td>
+    </tr>
+  </table>
+
+  <table>
+    <caption>2. Penggabungan Sel (Rowspan & Colspan)</caption>
+    <tr>
+      <th rowspan="2">Nama Senjata</th>
+      <th colspan="2">Detail</th>
+    </tr>
+    <tr>
+      <th>Asal</th>
+      <th>Kekuatan</th>
+    </tr>
+    <tr>
+      <td>Masamune</td>
+      <td>Jepang Legendaris</td>
+      <td>Tajam tak tertandingi</td>
+    </tr>
+    <tr>
+      <td>Stormbreaker</td>
+      <td>Asgard</td>
+      <td>Memanggil petir & Bifrost</td>
+    </tr>
+  </table>
+
+  <table>
+    <caption>3. Tabel Bersarang</caption>
+    <tr>
+      <th>Nama Senjata</th>
+      <th>Spesifikasi</th>
+    </tr>
+    <tr>
+      <td>Frostmourne</td>
+      <td>
+        <table>
+          <tr>
+            <th>Jenis</th>
+            <th>Kekuatan</th>
+          </tr>
+          <tr>
+            <td>Pedang Kutukan</td>
+            <td>Menghisap jiwa</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>Dragon Slayer</td>
+      <td>
+        <table>
+          <tr>
+            <th>Jenis</th>
+            <th>Kekuatan</th>
+          </tr>
+          <tr>
+            <td>Greatsword</td>
+            <td>Menumbangkan naga raksasa</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
+

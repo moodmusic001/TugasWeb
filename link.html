@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Hyperlink dalam Tabel</title>
+  <link rel="stylesheet" href="link.css">
+</head>
+<body id="top">
+  <nav>
+    <a href="index.html" style=" text-decoration: none; color: white; border-radius: 8px; background: #4f46e5; padding: 2px 5px;">Kembali ke Daftar Tugas</a>
+  </nav>
+
+  <h1>Hyperlink</h1>
+
+  <table>
+    <tr>
+      <th>No</th>
+      <th>Jenis Link</th>
+      <th>Penjelasan</th>
+      <th>Output / Hasil</th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>Link Absolut</td>
+      <td>Link yang mengarah ke alamat penuh (URL lengkap).</td>
+      <td><a href="https://www.google.com" style="color: red;" target="_blank">Google</a></td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>Link Relatif</td>
+      <td>Mengarah ke file lain dalam folder/project yang sama.</td>
+      <td><a href="aboutrumput.html" style="color: green;">About Rumput</a></td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>Internal Link</td>
+      <td>Link menuju bagian tertentu di halaman yang sama.</td>
+      <td><a href="#bagian1" style="color: blue;">Lompat ke Bagian 1</a></td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>Scroll ke Bawah</td>
+      <td>Mengarah ke bagian bawah halaman (id="bottom").</td>
+      <td><a href="#bawah" style="color: orangered;">ke Bagian Bawah</a></td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>Link Map</td>
+      <td>Membuat area tertentu dari gambar menjadi tombol/link.</td>
+      <td><a href="linkmap.html" style="color: greenyellow;">Lihat Disini</a></td>
+    </tr>
+
+    <tr>
+      <td>6</td>
+      <td>Link Gambar</td>
+      <td>Gambar dijadikan hyperlink yang bisa diklik.</td>
+      <td>
+        <a href="paragraf.html" style="color: brown;">
+          <img src="pressure.png" alt="" width="60">
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>7</td>
+      <td>Target Link</td>
+      <td>Link dengan target tertentu (misal: _blank = tab baru, _self = tab saat ini).</td>
+      <td><a href="https://www.wikipedia.org" style="color: rgb(189, 94, 5);" target="_self">Wikipedia</a></td>
+    </tr>
+
+    <tr>
+      <td>8</td>
+      <td>Link Email</td>
+      <td>Membuka aplikasi email untuk mengirim pesan.</td>
+      <td><a href="https://mail.google.com/mail/?view=cm&fs=1&to=izzulkhaqqi9293@gmail.com" style="color: gold;">Kirim Email</a></td>
+    </tr>
+
+    <tr>
+      <td>9</td>
+      <td>Link Telepon</td>
+      <td>Menghubungi nomor telepon (khusus mobile).</td>
+      <td><a href="https://wa.me/6289615259765" style="color: navy;">Telpon</a></td>
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td>Link SMS</td>
+      <td>Mengirim SMS ke nomor tertentu (khusus mobile).</td>
+      <td><a href="https://wa.me/6289615259765" style="color: pink;">Chat via WhatsApp</a></td>
+    </tr>
+
+    <tr>
+      <td>11</td>
+      <td>Link Download</td>
+      <td>Mendownload file langsung ke perangkat.</td>
+      <td><a href="folly.png" style="color: crimson;" download>Download</a></td>
+    </tr>
+  </table>
+
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+  <p id="bawah">Ini adalah bagian yang dituju dari internal link di tabel.</p>
+  <a href="#top" style="color: orangered;">Kembali ke Atas</a>
+
+</body>
+</html>
+
